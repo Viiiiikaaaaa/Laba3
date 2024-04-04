@@ -8,7 +8,10 @@ public class Methods {
         if (n == 0){
             return 1;
         }
+        if (n < 0){
+            System.out.println("Невозможно вычислить факториал отрицательного числа");
+            return -1;
+        }
         return n * factorial(n-1);
     }
-
 }
